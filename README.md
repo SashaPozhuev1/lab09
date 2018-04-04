@@ -1,3 +1,4 @@
+<фрагмент_вставки_значка>
 # lab04
 ## Laboratory work IV
 
