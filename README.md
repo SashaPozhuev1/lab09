@@ -74,15 +74,15 @@ $ git add README.md
 $ git commit -m"added CI"
 $ git push origin master
 
-$ travis lint - проверка ошибок
-$ travis accounts - используемый аккаунт
-$ travis sync - синхронизация репозиториев
-$ travis repos - данные о репозиториях (подключенные к travis)
-$ travis enable - добавляет проект в отслеживаемые travis
-$ travis whatsup - список сборок
-$ travis branches - отображает последние версии сборок для каждой ветки
-$ travis history - отображает историю сборок
-$ travis show - отображения задания, сборки
+$ travis lint - проверка ошибок.
+$ travis accounts - используемый аккаунт.
+$ travis sync - синхронизация репозиториев.
+$ travis repos - данные о репозиториях (подключенные к travis).
+$ travis enable - добавляет проект в отслеживаемые travis.
+$ travis whatsup - список сборок.
+$ travis branches - отображает последние версии сборок для каждой ветки.
+$ travis history - отображает историю сборок.
+$ travis show - отображения задания, сборки.
 
 Report
 
