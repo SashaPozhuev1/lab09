@@ -20,25 +20,30 @@ Tasks
 
 Tutorial
 
+```ShellSession
 $ export GITHUB_USERNAME=<имя_пользователя>
 $ export GITHUB_TOKEN=<полученный_токен>
-
+```
+```ShellSession
 $ cd ${GITHUB_USERNAME}/workspace
 $ pushd .
 $ source scripts/activate
-
+```
+```ShellSession
 $ \curl -sSL https://get.rvm.io | bash -s -- --ignore-dotfiles
 $ echo "source $HOME/.rvm/scripts/rvm" >> scripts/activate
 $ rvm autolibs disable
 $ rvm install ruby-2.4.2
 $ rvm use 2.4.2 --default
 $ gem install travis
-
+```
+```ShellSession
 $ git clone https://github.com/${GITHUB_USERNAME}/lab04 projects/lab05
 $ cd projects/lab05
 $ git remote remove origin
 $ git remote add origin https://github.com/${GITHUB_USERNAME}/lab05
-
+```
+```ShellSession
 	Создание файла-инструкции travis.yml
 $ cat > .travis.yml <<EOF
 language: cpp
@@ -68,22 +73,24 @@ $ travis login --github-token ${GITHUB_TOKEN}
 $ travis lint
 
 $ ex -sc '1i|<фрагмент_вставки_значка>' -cx README.md
-
+```
+```ShellSession
 $ git add .travis.yml
 $ git add README.md
 $ git commit -m"added CI"
 $ git push origin master
 
-$ travis lint - проверка ошибок.
-$ travis accounts - используемый аккаунт.
-$ travis sync - синхронизация репозиториев.
-$ travis repos - данные о репозиториях (подключенные к travis).
-$ travis enable - добавляет проект в отслеживаемые travis.
-$ travis whatsup - список сборок.
-$ travis branches - отображает последние версии сборок для каждой ветки.
-$ travis history - отображает историю сборок.
-$ travis show - отображения задания, сборки.
-
+$ travis lint - проверка ошибок
+$ travis accounts - используемый аккаунт
+$ travis sync - синхронизация репозиториев
+$ travis repos - данные о репозиториях (подключенные к travis)
+$ travis enable - добавляет проект в отслеживаемые travis
+$ travis whatsup - список сборок
+$ travis branches - отображает последние версии сборок для каждой ветки
+$ travis history - отображает историю сборок
+$ travis show - отображения задания, сборки
+```
+```ShellSession
 Report
 
 $ popd
@@ -94,7 +101,7 @@ $ cp tasks/lab${LAB_NUMBER}/README.md reports/lab${LAB_NUMBER}/REPORT.md
 $ cd reports/lab${LAB_NUMBER}
 $ edit REPORT.md
 $ gistup -m "lab${LAB_NUMBER}"
-
+```
 Links
 
     Travis Client
