@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/SashaPozhuev1/lab06.svg?branch=master)](https://travis-ci.org/SashaPozhuev1/lab06)
-# lab06
+[![Build Status](https://travis-ci.org/SashaPozhuev1/lab07.svg?branch=master)](https://travis-ci.org/SashaPozhuev1/lab07)
+# lab07
 ## Laboratory work VI
 
 Данная лабораторная работа посвещена изучению фреймворков для тестирования на примере **Catch**
@@ -10,7 +10,7 @@ $ open https://github.com/philsquared/Catch
 
 ## Tasks
 
-- [x] 1. Создать публичный репозиторий с названием **lab06** на сервисе **GitHub**
+- [x] 1. Создать публичный репозиторий с названием **lab07** на сервисе **GitHub**
 - [x] 2. Выполнить инструкцию учебного материала
 - [x] 3. Ознакомиться со ссылками учебного материала
 - [x] 4. Составить отчет и отправить ссылку личным сообщением в **Slack**
@@ -29,10 +29,10 @@ $ source scripts/activate
 ```
 
 ```ShellSession
-$ git clone https://github.com/${GITHUB_USERNAME}/lab05 projects/lab06
-$ cd projects/lab06
+$ git clone https://github.com/${GITHUB_USERNAME}/lab05 projects/lab07
+$ cd projects/lab07
 $ git remote remove origin
-$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab06
+$ git remote add origin https://github.com/${GITHUB_USERNAME}/lab07
 ```
 
 ```ShellSession
@@ -94,7 +94,7 @@ $ cmake --build _build --target test -- ARGS=--verbose
 
 ```ShellSession
 #Заменяем слова
-$ gsed -i 's/lab05/lab06/g' README.md
+$ gsed -i 's/lab05/lab07/g' README.md
 $ gsed -i 's/\(DCMAKE_INSTALL_PREFIX=_install\)/\1 -DBUILD_TESTS=ON/' .travis.yml
 $ gsed -i '/cmake --build _build --target install/a\
 - cmake --build _build --target test -- ARGS=--verbose
@@ -121,7 +121,7 @@ $ travis enable - добавляем проект на trsvis
 $ mkdir artifacts
 $ sleep 20s && gnome-screenshot --file artifacts/screenshot.png
 # for macOS: $ screencapture -T 20 artifacts/screenshot.png
-# open https://github.com/${GITHUB_USERNAME}/lab06
+# open https://github.com/${GITHUB_USERNAME}/lab07
 ```
 
 ## Report
